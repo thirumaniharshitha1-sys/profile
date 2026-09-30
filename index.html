@@ -1,115 +1,430 @@
-# 👋 Hi, I'm Thirumani Harshitha
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-### 💻 Computer Science & Engineering Student
+    <title>Thirumani Harshitha | Resume</title>
 
-📍 Telangana, India  
-📧 thirumaniharshitha1@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/harshitha-thirumani-4b145b42b/)
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
----
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f4f7;
+            color: #222;
+            line-height: 1.6;
+        }
 
-## 👩‍💻 About Me
+        .resume {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 45px 55px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
 
-I'm a Computer Science & Engineering student interested in **Full-Stack Web Development** and building practical software projects.
+        /* Header */
 
-I have hands-on experience with **React.js, JavaScript, Node.js, Express.js, MongoDB, REST APIs, Git, and GitHub**.
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #222;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
 
-Currently, I'm focused on improving my programming and development skills by building projects and learning modern web technologies.
+        .header h1 {
+            font-size: 34px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
 
----
+        .header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #555;
+            margin-bottom: 12px;
+        }
 
-## 🛠️ Tech Stack
+        .contact {
+            font-size: 14px;
+            color: #444;
+        }
 
-### Languages
-- JavaScript
-- Java
-- C
+        .contact a {
+            color: #222;
+            text-decoration: none;
+        }
 
-### Frontend
-- React.js
-- HTML
-- CSS
+        /* Sections */
 
-### Backend
-- Node.js
-- Express.js
-- REST APIs
+        .section {
+            margin-bottom: 25px;
+        }
 
-### Database
-- MongoDB
-- MongoDB Atlas
+        .section-title {
+            font-size: 19px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 1.5px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
 
-### Tools
-- Git
-- GitHub
-- VS Code
-- Postman
+        .summary {
+            text-align: justify;
+            font-size: 14px;
+        }
 
----
+        /* Skills */
 
-## 🚀 Featured Project
+        .skills {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            row-gap: 8px;
+            font-size: 14px;
+        }
 
-### 🎓 Student Registration Portal
+        .skill-name {
+            font-weight: bold;
+        }
 
-A full-stack web application for managing student registrations.
+        /* Projects */
 
-**Technologies:**  
-`React.js` `JavaScript` `Node.js` `Express.js` `MongoDB` `Axios`
+        .project {
+            margin-bottom: 18px;
+        }
 
-### Features
-- ✅ Student registration
-- ✅ Add, view, update and delete student records
-- ✅ MongoDB database integration
-- ✅ REST API integration
-- ✅ Login authentication
-- ✅ Form validation
-- ✅ Email validation
-- ✅ Delete confirmation
-- ✅ React frontend with Express backend
+        .project-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
 
-🔗 **[View Project on GitHub](YOUR_PROJECT_LINK)**
+        .project-tech {
+            font-size: 13px;
+            color: #555;
+            margin: 3px 0 7px;
+        }
 
----
+        ul {
+            padding-left: 20px;
+        }
 
-## 💼 Internship
+        li {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
 
-### TechNGlobal — Full-Stack Development Intern
+        /* Education & Internship */
 
-- Completed training in REST APIs and backend development
-- Worked with API development and validations
-- Developed a full-stack Student Registration Portal
-- Practiced Git and GitHub version control
-- Worked with frontend, backend and database integration
+        .item {
+            margin-bottom: 15px;
+        }
 
----
+        .item-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
 
-## 🎯 Currently Learning
+        .item-subtitle {
+            font-size: 14px;
+            color: #555;
+        }
 
-- Full-Stack Web Development
-- React.js
-- Node.js & Express.js
-- MongoDB
-- REST API Development
-- Data Structures & Algorithms
-- Computer Networks
-- Programming Languages
+        /* Links */
 
----
+        .links a {
+            color: #222;
+            text-decoration: none;
+            font-size: 14px;
+        }
 
-## 📊 GitHub Stats
+        .links a:hover {
+            text-decoration: underline;
+        }
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=default)
+        /* Responsive */
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=default)
+        @media (max-width: 600px) {
+            .resume {
+                margin: 0;
+                padding: 30px 25px;
+            }
 
----
+            .header h1 {
+                font-size: 27px;
+            }
 
-## 📫 Connect With Me
+            .skills {
+                grid-template-columns: 1fr;
+                row-gap: 2px;
+            }
+        }
 
-📧 **Email:** thirumaniharshitha1@gmail.com
+        /* Print */
 
-🔗 **LinkedIn:**  
-https://www.linkedin.com/in/harshitha-thirumani-4b145b42b/
+        @media print {
+            body {
+                background: white;
+            }
 
-💻 **GitHub:**  
-https://github.com/YOUR_GITHUB_USERNAME
+            .resume {
+                margin: 0;
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <h1>THIRUMANI HARSHITHA</h1>
+
+        <h2>Computer Science & Engineering Student</h2>
+
+        <div class="contact">
+            Telangana, India |
+            <a href="mailto:thirumaniharshitha1@gmail.com">
+                thirumaniharshitha1@gmail.com
+            </a>
+            |
+            <a href="https://www.linkedin.com/in/harshitha-thirumani-4b145b42b/"
+               target="_blank">
+                LinkedIn
+            </a>
+            |
+            <a href="https://github.com/YOUR_GITHUB_USERNAME"
+               target="_blank">
+                GitHub
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- SUMMARY -->
+    <section class="section">
+
+        <h2 class="section-title">Summary</h2>
+
+        <p class="summary">
+            Computer Science and Engineering student with hands-on experience
+            in JavaScript, React.js, Node.js, Express.js, MongoDB, REST APIs,
+            Git, and GitHub. Experienced in developing full-stack web
+            applications with CRUD operations, authentication, database
+            integration, and form validation. Interested in building practical
+            software projects and continuously improving full-stack development
+            skills.
+        </p>
+
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="section">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-name">Languages</div>
+            <div>JavaScript, Java, C</div>
+
+            <div class="skill-name">Frontend</div>
+            <div>React.js, HTML, CSS</div>
+
+            <div class="skill-name">Backend</div>
+            <div>Node.js, Express.js, REST APIs</div>
+
+            <div class="skill-name">Database</div>
+            <div>MongoDB, MongoDB Atlas</div>
+
+            <div class="skill-name">Tools</div>
+            <div>Git, GitHub, VS Code, Postman</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project">
+
+            <div class="project-title">
+                Student Registration Portal
+            </div>
+
+            <div class="project-tech">
+                React.js | JavaScript | Node.js | Express.js | MongoDB | Axios
+            </div>
+
+            <ul>
+                <li>
+                    Developed a full-stack web application for managing
+                    student registration records.
+                </li>
+
+                <li>
+                    Implemented Create, Read, Update, and Delete (CRUD)
+                    operations.
+                </li>
+
+                <li>
+                    Integrated MongoDB Atlas for database storage and
+                    management.
+                </li>
+
+                <li>
+                    Developed REST APIs using Node.js and Express.js.
+                </li>
+
+                <li>
+                    Implemented login authentication and form validation.
+                </li>
+
+                <li>
+                    Added email validation and delete confirmation features.
+                </li>
+
+                <li>
+                    Connected the React frontend with backend APIs using Axios.
+                </li>
+
+                <li>
+                    Used Git and GitHub for version control and project
+                    management.
+                </li>
+            </ul>
+
+            <p class="links">
+                🔗
+                <a href="YOUR_PROJECT_LINK" target="_blank">
+                    View Project on GitHub
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERNSHIP -->
+    <section class="section">
+
+        <h2 class="section-title">Internship</h2>
+
+        <div class="item">
+
+            <div class="item-title">
+                TechNGlobal — Full-Stack Development Intern
+            </div>
+
+            <div class="item-subtitle">
+                2026
+            </div>
+
+            <ul>
+                <li>
+                    Completed training in REST APIs, API development,
+                    validations, and backend technologies.
+                </li>
+
+                <li>
+                    Developed a Student Registration Portal as an internship
+                    project.
+                </li>
+
+                <li>
+                    Worked with frontend, backend, database integration,
+                    and Git/GitHub.
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="section">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="item">
+
+            <div class="item-title">
+                Bachelor of Technology — Computer Science & Engineering
+            </div>
+
+            <div class="item-subtitle">
+                Jawaharlal Nehru Technological University (JNTU)
+            </div>
+
+            <div class="item-subtitle">
+                R22 Regulation
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COURSEWORK -->
+    <section class="section">
+
+        <h2 class="section-title">Relevant Coursework</h2>
+
+        <p>
+            Data Structures & Algorithms • Computer Networks •
+            Programming Languages • Database Management Systems •
+            Web Development
+        </p>
+
+    </section>
+
+
+    <!-- GITHUB / LINKS -->
+    <section class="section">
+
+        <h2 class="section-title">Profiles</h2>
+
+        <div class="links">
+
+            <p>
+                💻 GitHub:
+                <a href="https://github.com/YOUR_GITHUB_USERNAME"
+                   target="_blank">
+                    github.com/YOUR_GITHUB_USERNAME
+                </a>
+            </p>
+
+            <p>
+                🔗 LinkedIn:
+                <a href="https://www.linkedin.com/in/harshitha-thirumani-4b145b42b/"
+                   target="_blank">
+                    linkedin.com/in/harshitha-thirumani-4b145b42b
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
